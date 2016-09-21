@@ -1,0 +1,38 @@
+# Site settings
+baseurl = "http://faq.ru/"
+title = "Simple FAQ Theme for Hugo"
+theme = "hugo-faq-theme"
+
+# Do not build RSS files
+disableRSS = true
+
+# Do not build sitemap
+disableSitemap = true
+
+# Menu
+SectionPagesMenu = "main"
+
+[[menu.main]]
+    name = "Basics"
+    weight = 10
+    url = "#basics"
+[[menu.main]]
+    name = "Mobile"
+    weight = 20
+    url = "#mobile"
+[[menu.main]]
+    name = "Account"
+    weight = 30
+    url = "#account"
+[[menu.main]]
+    name = "Payments"
+    weight = 40
+    url = "#payments"
+[[menu.main]]
+    name = "Privacy"
+    weight = 50
+    url = "#privacy"
+[[menu.main]]
+    name = "Delivery"
+    weight = 60
+    url = "#delivery"

@@ -1,0 +1,18 @@
+name = "Hugo FAQ Theme"
+license = "MIT" # original CodyHouse Terms of use are here https://codyhouse.co/terms/
+licenselink = "//github.com/aerohub/hugo-faq-theme/blob/master/LICENSE.md"
+description = "Simple FAQ Theme for Hugo"
+homepage = "//github.com/aerohub/hugo-faq-theme"
+tags = ["faq", "data files"]
+features = ["FAQ"]
+min_version = 0.16
+
+[author]
+  name = "Pavel Kanyshev"
+  homepage = "//github.com/aerohub"
+
+# If porting an existing theme
+[original]
+  name = "CSS FAQ Template"
+  homepage = "//codyhouse.co/gem/css-faq-template/"
+  repo = "//github.com/CodyHouse/faq-template"

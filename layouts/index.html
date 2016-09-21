@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/reset.css">
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/blue.css">
+	<script src="{{ .Site.BaseURL }}js/modernizr.js"></script>
+	<title>{{ .Site.Title }}</title>
+</head>
+<body>
+<header>
+	<h1>{{ .Site.Title }}</h1>
+</header>
+<section class="cd-faq">
+	<ul class="cd-faq-categories">
+        {{ $currentNode := . }}
+		{{ range .Site.Menus.main }}
+		<li><a {{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} active{{end}} class="selected" href="{{.URL}}">{{ .Name }}</a></li>
+		{{ end }}
+	</ul>
+
+	<div class="cd-faq-items">
+	{{ range $.Site.Data.faq.groups }}
+		<ul id="{{.id}}" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>{{.name}}</h2></li>
+		{{ range .items }}
+			<li>
+				<a class="cd-faq-trigger" href="#0">{{.question}}</a>
+				<div class="cd-faq-content">
+					<p>{{.answer}}</p>
+				</div>
+			</li>
+			{{ end }}
+		</ul>
+		{{ end }}
+	</div>
+	<a href="#0" class="cd-close-panel">Close</a>
+</section>
+<script src="{{ .Site.BaseURL }}js/jquery-2.1.1.js"></script>
+<script src="{{ .Site.BaseURL }}js/jquery.mobile.custom.min.js"></script>
+<script src="{{ .Site.BaseURL }}js/main.js"></script>
+</body>
+</html>
