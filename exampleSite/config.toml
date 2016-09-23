@@ -36,3 +36,11 @@ SectionPagesMenu = "main"
 		name = "Delivery"
 		weight = 60
 		url = "#delivery"
+
+[params]
+	
+	# Custom styling
+	# To customize the styling of this theme, uncomment and edit the following line to point 
+	# to your site's css in the assets/ directory. 
+
+	custom_css = ["css/blue.css"]

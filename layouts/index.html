@@ -7,7 +7,10 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/reset.css">
-	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/blue.css">
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css">
+	{{ range .Site.Params.custom_css }}
+    <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
+    {{ end }}
 	<script src="{{ .Site.BaseURL }}js/modernizr.js"></script>
 	<title>{{ .Site.Title }}</title>
 </head>
