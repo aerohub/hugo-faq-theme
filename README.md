@@ -2,7 +2,7 @@
 
 You may use this theme for building very simple FAQs or note lists.
 
-**IMPORTANT!** This theme is just a dummy port of [FAQ Template](http://codyhouse.co/gem/css-faq-template/) by CodyHouse. My only goal was to understand how to build a FAQ page with Hugo. The original template contains no styles for text formatting, so this theme also does. Wanna styles? Just fork the repo and write them! There are original sass and css files in static folder. Use [custom styling](#custom-styling) feature to override original css. Don't forget to [share](//github.com/aerohub/hugo-faq-theme/pulls) your work with the community :smile:
+**IMPORTANT!** This theme is just a dummy port of [FAQ Template](http://codyhouse.co/gem/css-faq-template/) by CodyHouse. My only goal was to understand how to build a FAQ page with Hugo. The original template contains no styles for text formatting, so this theme also does. Wanna styles? Just fork the repo and write them! There are original sass and css files in static folder. Use custom styling feature to override original css. Don't forget to [share](//github.com/aerohub/hugo-faq-theme/pulls) your work with the community :smile:
 
 ## Screenshot
 
