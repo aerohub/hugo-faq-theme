@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "http://example.org/"
 languageCode = "en-US"
 title = "Simple FAQ Theme for Hugo"
 theme = "hugo-faq-theme"
